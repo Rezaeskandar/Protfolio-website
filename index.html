@@ -1,442 +1,745 @@
 <!DOCTYPE html>
 <html lang="sv">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Reza Eskandari - Fullstack .NET Utvecklare & Azure Cloud. Modern portföljsida med projekt, kompetenser och erfarenhet.">
-    <meta name="keywords" content="Reza Eskandari, Fullstack utvecklare, .NET, C#, Azure, React, TypeScript, utvecklare Stockholm">
-    <meta name="author" content="Reza Eskandari">
-    <title>Reza Eskandari - Fullstack .NET Utvecklare & Azure Cloud </title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Reza Eskandari - Fullstack .NET Utvecklare & Azure Cloud. Modern portföljsida med projekt, kompetenser och erfarenhet."
+    />
+    <meta
+      name="keywords"
+      content="Reza Eskandari, Fullstack utvecklare, .NET, C#, Azure, React, TypeScript, utvecklare Stockholm"
+    />
+    <meta name="author" content="Reza Eskandari" />
+    <title>Reza Eskandari - Fullstack .NET Utvecklare & Azure Cloud</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span data-sv="Reza" data-en="Reza">Reza</span>
-            </div>
-            <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item">
-                    <a href="#hem" class="nav-link" data-sv="Hem" data-en="Home">Hem</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projekt" class="nav-link" data-sv="Projekt" data-en="Projects">Projekt</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#kompetenser" class="nav-link" data-sv="Kompetenser" data-en="Skills">Kompetenser</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#erfarenhet" class="nav-link" data-sv="Erfarenhet" data-en="Experience">Erfarenhet</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#kontakt" class="nav-link" data-sv="Kontakt" data-en="Contact">Kontakt</a>
-                </li>
-            </ul>
-            <div class="nav-controls">
-                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
-                    <i class="fas fa-moon"></i>
-                </button>
-                <button class="lang-toggle" id="lang-toggle" aria-label="Change language">
-                    <span class="flag">🇸🇪</span>
-                </button>
-                <div class="hamburger" id="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </div>
+      <div class="nav-container">
+        <div class="nav-logo">
+          <span data-sv="Reza" data-en="Reza">Reza</span>
         </div>
+        <ul class="nav-menu" id="nav-menu">
+          <li class="nav-item">
+            <a href="#hem" class="nav-link" data-sv="Hem" data-en="Home">Hem</a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="#projekt"
+              class="nav-link"
+              data-sv="Projekt"
+              data-en="Projects"
+              >Projekt</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="#kompetenser"
+              class="nav-link"
+              data-sv="Kompetenser"
+              data-en="Skills"
+              >Kompetenser</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="#erfarenhet"
+              class="nav-link"
+              data-sv="Erfarenhet"
+              data-en="Experience"
+              >Erfarenhet</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="#kontakt"
+              class="nav-link"
+              data-sv="Kontakt"
+              data-en="Contact"
+              >Kontakt</a
+            >
+          </li>
+        </ul>
+        <div class="nav-controls">
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Toggle theme"
+          >
+            <i class="fas fa-moon"></i>
+          </button>
+          <button
+            class="lang-toggle"
+            id="lang-toggle"
+            aria-label="Change language"
+          >
+            <span class="flag">🇸🇪</span>
+          </button>
+          <div class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="hem" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title">
-                        <span data-sv="Hej, jag är" data-en="Hello, I'm">Hej, jag är</span>
-                        <span class="highlight">Reza Eskandari</span>
-                    </h1>
-                    <h2 class="hero-subtitle" data-sv="Fullstack .NET Utvecklare & Azure Cloud" data-en="Fullstack .NET Developer & Azure Cloud.">
-                        Fullstack .NET Utvecklare & Azure Cloud
-                    </h2>
-                    <p class="hero-description" data-sv="Självgående utvecklare med erfarenhet inom .NET, C#, React/TypeScript, Azure och databaser. Studerar för närvarande Prompt Engineering & Generativ AI på Nackademin." data-en="Self-driven developer with experience in .NET, C#, React/TypeScript, Azure, databases, and DevOps/CI/CD. Currently studying Prompt Engineering & Generative AI at Nackademin.">
-                        Självgående utvecklare med erfarenhet inom .NET, C#, React/TypeScript, Azure och databaser. Studerar för närvarande Prompt Engineering & Generativ AI på Nackademin.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#projekt" class="btn btn-primary" data-sv="Se mina projekt" data-en="View my projects">Se mina projekt</a>
-                        <a href="#kontakt" class="btn btn-secondary" data-sv="Kontakta mig" data-en="Contact me">Kontakta mig</a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <img src="profile.jpg" alt="Reza Eskandari - Fullstack .NET Developer" class="profile-image">
-                </div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-title">
+              <span data-sv="Hej, jag är" data-en="Hello, I'm"
+                >Hej, jag är</span
+              >
+              <span class="highlight">Reza Eskandari</span>
+            </h1>
+            <h2
+              class="hero-subtitle"
+              data-sv="Fullstack .NET Utvecklare & Azure Cloud"
+              data-en="Fullstack .NET Developer & Azure Cloud."
+            >
+              Fullstack .NET Utvecklare & Azure Cloud
+            </h2>
+            <p
+              class="hero-description"
+              data-sv="Självgående utvecklare med erfarenhet inom .NET, C#, React/TypeScript, Azure och databaser. Studerar för närvarande Prompt Engineering & Generativ AI på Nackademin."
+              data-en="Self-driven developer with experience in .NET, C#, React/TypeScript, Azure, databases, and DevOps/CI/CD. Currently studying Prompt Engineering & Generative AI at Nackademin."
+            >
+              Självgående utvecklare med erfarenhet inom .NET, C#,
+              React/TypeScript, Azure och databaser. Studerar för närvarande
+              Prompt Engineering & Generativ AI på Nackademin.
+            </p>
+            <div class="hero-buttons">
+              <a
+                href="#projekt"
+                class="btn btn-primary"
+                data-sv="Se mina projekt"
+                data-en="View my projects"
+                >Se mina projekt</a
+              >
+              <a
+                href="#kontakt"
+                class="btn btn-secondary"
+                data-sv="Kontakta mig"
+                data-en="Contact me"
+                >Kontakta mig</a
+              >
+              <a
+                href="Reza_Eskandari_CV.pdf"
+                class="btn btn-outline"
+                download
+                data-sv="Ladda ner CV"
+                data-en="Download CV"
+                >Ladda ner CV</a
+              >
             </div>
+          </div>
+          <div class="hero-image">
+            <img
+              src="profile.jpg"
+              alt="Reza Eskandari - Fullstack .NET Developer"
+              class="profile-image"
+            />
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projekt" class="projects">
-        <div class="container">
-            <h2 class="section-title" data-sv="Mina Projekt" data-en="My Projects">Mina Projekt</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-globe"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title" data-sv="Dynamic CV Website" data-en="Dynamic CV Website">Dynamic CV Website</h3>
-                        <p class="project-description" data-sv="En dynamisk CV-webbplats byggd med vanilla JavaScript, HTML och CSS med responsiv design och interaktiva element." data-en="A dynamic CV website built with vanilla JavaScript, HTML, and CSS featuring responsive design and interactive elements.">
-                            En dynamisk CV-webbplats byggd med vanilla JavaScript, HTML och CSS med responsiv design och interaktiva element.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://rezaeskandar.github.io/Dynamic-CV-N/home.html" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                                <span data-sv="Demo" data-en="Demo">Demo</span>
-                            </a>
-                            <a href="https://github.com/Rezaeskandar/Dynamic-CV-N?tab=readme-ov-file" class="project-link" target="_blank">
-                                <i class="fab fa-github"></i>
-                                <span data-sv="Kod" data-en="Code">Kod</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-shopping-cart"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title" data-sv="Fullstack E-handel" data-en="Fullstack E-commerce">Fullstack E-handel</h3>
-                        <p class="project-description" data-sv="En komplett e-handelsplattform med C#/.NET backend, React/TypeScript frontend och JWT-autentisering. Examensprojekt som visar fullstack-kompetenser." data-en="A complete e-commerce platform with C#/.NET backend, React/TypeScript frontend, and JWT authentication. Graduation project showcasing fullstack capabilities.">
-                            En komplett e-handelsplattform med C#/.NET backend, React/TypeScript frontend och JWT-autentisering. Examensprojekt som visar fullstack-kompetenser.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">C#</span>
-                            <span class="tech-tag">.NET</span>
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">TypeScript</span>
-                            <span class="tech-tag">JWT</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Rezaeskandar/CenterMarket" class="project-link" target="_blank">
-                                <i class="fab fa-github"></i>
-                                <span data-sv="Kod" data-en="Code">Kod</span>
-                            </a>
-                            <a href="#" class="project-link demo-coming-soon" style="opacity: 0.6; cursor: not-allowed;">
-                                <i class="fas fa-external-link-alt"></i>
-                                <span data-sv="Demo (Kommer snart)" data-en="Demo (Coming soon)">Demo (Kommer snart)</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-cards-blank"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title" data-sv="Shuffle Card Game" data-en="Shuffle Card Game">Shuffle Card Game</h3>
-                        <p class="project-description" data-sv="Ett interaktivt kortspel byggt med React och styling med CSS. Inkluderar spellogik, animationer och responsiv design." data-en="An interactive card game built with React and styled with CSS. Features game logic, animations, and responsive design.">
-                            Ett interaktivt kortspel byggt med React och styling med CSS. Inkluderar spellogik, animationer och responsiv design.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">HTML</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Rezaeskandar/ShuffelGameASPWithReact" class="project-link" target="_blank">
-                                <i class="fab fa-github"></i>
-                                <span data-sv="Kod" data-en="Code">Kod</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title" data-sv="Mina Projekt" data-en="My Projects">
+          Mina Projekt
+        </h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-placeholder">
+                <i class="fas fa-globe"></i>
+              </div>
             </div>
-            <div class="github-link">
-                <a href="https://github.com/Rezaeskandar" class="btn btn-outline" target="_blank">
-                    <i class="fab fa-github"></i>
-                    <span data-sv="Se alla projekt på GitHub" data-en="View all projects on GitHub">Se alla projekt på GitHub</span>
+            <div class="project-content">
+              <h3
+                class="project-title"
+                data-sv="Portfolio Website"
+                data-en="Portfolio Website"
+              >
+                Portfolio-webbplats
+              </h3>
+              <p
+                class="project-description"
+                data-sv="En portfolio website byggd med vanilla JavaScript, HTML och CSS med responsiv design och interaktiva element."
+                data-en="A Portfolio-webbplats built with vanilla JavaScript, HTML, and CSS featuring responsive design and interactive elements."
+              >
+                En dynamisk Portfolio-webbplats byggd med vanilla JavaScript,
+                HTML och CSS med responsiv design och interaktiva element.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://rezaeskandar.github.io/Protfolio-website/"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                  <span data-sv="Demo" data-en="Demo">Demo</span>
                 </a>
+                <a
+                  href="https://github.com/Rezaeskandar/Dynamic-CV-N?tab=readme-ov-file"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i>
+                  <span data-sv="Kod" data-en="Code">Kod</span>
+                </a>
+              </div>
             </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-placeholder">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3
+                class="project-title"
+                data-sv="Fullstack E-handel"
+                data-en="Fullstack E-commerce"
+              >
+                Fullstack E-handel
+              </h3>
+              <p
+                class="project-description"
+                data-sv="En komplett e-handelsplattform med C#/.NET backend, React/TypeScript frontend och JWT-autentisering. Examensprojekt som visar fullstack-kompetenser."
+                data-en="A complete e-commerce platform with C#/.NET backend, React/TypeScript frontend, and JWT authentication. Graduation project showcasing fullstack capabilities."
+              >
+                En komplett e-handelsplattform med C#/.NET backend,
+                React/TypeScript frontend och JWT-autentisering. Examensprojekt
+                som visar fullstack-kompetenser.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">C#</span>
+                <span class="tech-tag">.NET</span>
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">JWT</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Rezaeskandar/CenterMarket"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i>
+                  <span data-sv="Kod" data-en="Code">Kod</span>
+                </a>
+                <a
+                  href="#"
+                  class="project-link demo-coming-soon"
+                  style="opacity: 0.6; cursor: not-allowed"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                  <span
+                    data-sv="Demo (Kommer snart)"
+                    data-en="Demo (Coming soon)"
+                    >Demo (Kommer snart)</span
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-placeholder">
+                <i class="fas fa-cards-blank"></i>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3
+                class="project-title"
+                data-sv="Shuffle Card Game"
+                data-en="Shuffle Card Game"
+              >
+                Shuffle Card Game
+              </h3>
+              <p
+                class="project-description"
+                data-sv="Ett interaktivt kortspel byggt med React och styling med CSS. Inkluderar spellogik, animationer och responsiv design."
+                data-en="An interactive card game built with React and styled with CSS. Features game logic, animations, and responsive design."
+              >
+                Ett interaktivt kortspel byggt med React och styling med CSS.
+                Inkluderar spellogik, animationer och responsiv design.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">HTML</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Rezaeskandar/ShuffelGameASPWithReact"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i>
+                  <span data-sv="Kod" data-en="Code">Kod</span>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="github-link">
+          <a
+            href="https://github.com/Rezaeskandar"
+            class="btn btn-outline"
+            target="_blank"
+          >
+            <i class="fab fa-github"></i>
+            <span
+              data-sv="Se alla projekt på GitHub"
+              data-en="View all projects on GitHub"
+              >Se alla projekt på GitHub</span
+            >
+          </a>
+        </div>
+      </div>
     </section>
 
     <!-- Skills Section -->
     <section id="kompetenser" class="skills">
-        <div class="container">
-            <h2 class="section-title" data-sv="Kompetenser" data-en="Skills">Kompetenser</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <div class="skill-icon">
-                        <i class="fas fa-paint-brush"></i>
-                    </div>
-                    <h3 class="skill-title" data-sv="Frontend & UX" data-en="Frontend & UX">Frontend & UX</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">HTML</span>
-                        <span class="skill-tag">CSS</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">Angular</span>
-                        <span class="skill-tag">Bootstrap</span>
-                        <span class="skill-tag">UX/UI</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <div class="skill-icon">
-                        <i class="fas fa-server"></i>
-                    </div>
-                    <h3 class="skill-title" data-sv="Backend" data-en="Backend">Backend</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">.NET</span>
-                        <span class="skill-tag">C#</span>
-                        <span class="skill-tag">REST API</span>
-                        <span class="skill-tag">Xunit</span>
-                        <span class="skill-tag">MSTest</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <div class="skill-icon">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <h3 class="skill-title" data-sv="Databaser" data-en="Databases">Databaser</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">MSSQL</span>
-                        <span class="skill-tag">PostgreSQL</span>
-                        <span class="skill-tag">NoSQL</span>
-                        <span class="skill-tag">Entity Framework</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <div class="skill-icon">
-                        <i class="fas fa-cloud"></i>
-                    </div>
-                    <h3 class="skill-title" data-sv="Moln" data-en="Cloud">Moln</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Azure</span>
-                        <span class="skill-tag" data-sv="Skalning" data-en="Scaling">Skalning</span>
-                        <span class="skill-tag">CI/CD</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <div class="skill-icon">
-                        <i class="fas fa-tools"></i>
-                    </div>
-                    <h3 class="skill-title" data-sv="Metoder & Verktyg" data-en="Methods & Tools">Metoder & Verktyg</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Scrum</span>
-                        <span class="skill-tag">Kanban</span>
-                        <span class="skill-tag">Git/GitHub</span>
-                        <span class="skill-tag">CI/CD Pipelines</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <div class="skill-icon">
-                        <i class="fas fa-language"></i>
-                    </div>
-                    <h3 class="skill-title" data-sv="Språk" data-en="Languages">Språk</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag" data-sv="Svenska" data-en="Swedish">Svenska</span>
-                        <span class="skill-tag" data-sv="Engelska" data-en="English">Engelska</span>
-                        <span class="skill-tag" data-sv="Persiska" data-en="Persian">Persiska</span>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title" data-sv="Kompetenser" data-en="Skills">
+          Kompetenser
+        </h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <div class="skill-icon">
+              <i class="fas fa-paint-brush"></i>
             </div>
+            <h3
+              class="skill-title"
+              data-sv="Frontend & UX"
+              data-en="Frontend & UX"
+            >
+              Frontend & UX
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Angular</span>
+              <span class="skill-tag">Bootstrap</span>
+              <span class="skill-tag">UX/UI</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-icon">
+              <i class="fas fa-server"></i>
+            </div>
+            <h3 class="skill-title" data-sv="Backend" data-en="Backend">
+              Backend
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag">.NET</span>
+              <span class="skill-tag">C#</span>
+              <span class="skill-tag">REST API</span>
+              <span class="skill-tag">Xunit</span>
+              <span class="skill-tag">MSTest</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3 class="skill-title" data-sv="Databaser" data-en="Databases">
+              Databaser
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag">MSSQL</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">NoSQL</span>
+              <span class="skill-tag">Entity Framework</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-icon">
+              <i class="fas fa-cloud"></i>
+            </div>
+            <h3 class="skill-title" data-sv="Moln" data-en="Cloud">Moln</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Azure</span>
+              <span class="skill-tag" data-sv="Skalning" data-en="Scaling"
+                >Skalning</span
+              >
+              <span class="skill-tag">CI/CD</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-icon">
+              <i class="fas fa-tools"></i>
+            </div>
+            <h3
+              class="skill-title"
+              data-sv="Metoder & Verktyg"
+              data-en="Methods & Tools"
+            >
+              Metoder & Verktyg
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Scrum</span>
+              <span class="skill-tag">Kanban</span>
+              <span class="skill-tag">Git/GitHub</span>
+              <span class="skill-tag">CI/CD Pipelines</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-icon">
+              <i class="fas fa-language"></i>
+            </div>
+            <h3 class="skill-title" data-sv="Språk" data-en="Languages">
+              Språk
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag" data-sv="Svenska" data-en="Swedish"
+                >Svenska</span
+              >
+              <span class="skill-tag" data-sv="Engelska" data-en="English"
+                >Engelska</span
+              >
+              <span class="skill-tag" data-sv="Persiska" data-en="Persian"
+                >Persiska</span
+              >
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Experience Section -->
     <section id="erfarenhet" class="experience">
-        <div class="container">
-            <h2 class="section-title" data-sv="Erfarenhet & Utbildning" data-en="Experience & Education">Erfarenhet & Utbildning</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title" data-sv="Prompt Engineering & Generativ AI" data-en="Prompt Engineering & Generative AI">Prompt Engineering & Generativ AI</h3>
-                        <div class="timeline-meta">
-                            <span class="timeline-date" data-sv="Pågående" data-en="Ongoing">Pågående</span>
-                            <span class="timeline-location">Nackademin</span>
-                        </div>
-                        <p class="timeline-description" data-sv="Fördjupning inom AI-teknik och prompt engineering för att utveckla kompetenser inom generativ AI och maskininlärning." data-en="Specialization in AI technology and prompt engineering to develop skills in generative AI and machine learning.">
-                            Fördjupning inom AI-teknik och prompt engineering för att utveckla kompetenser inom generativ AI och maskininlärning.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">Devup Solutions</h3>
-                        <div class="timeline-meta">
-                            <span class="timeline-date">2023-2024</span>
-                            <span class="timeline-location" data-sv="Utvecklare" data-en="Developer">Utvecklare (Praktik)</span>
-                        </div>
-                        <p class="timeline-description" data-sv="Fullstack-utveckling med fokus på .NET och moderna webblösningar. Arbetade med agila metoder och CI/CD-processer." data-en="Fullstack development focused on .NET and modern web solutions. Worked with agile methods and CI/CD processes.">
-                            Fullstack-utveckling med fokus på .NET och moderna webblösningar. Arbetade med agila metoder och CI/CD-processer.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title" data-sv="Azure Cloud Utveckling" data-en="Azure Cloud Development">Azure Cloud Utveckling</h3>
-                        <div class="timeline-meta">
-                            <span class="timeline-date">Oct 2024- Dec2024</span>
-                            <span class="timeline-location">IT-Högskolan</span>
-                        </div>
-                        <p class="timeline-description" data-sv="Specialisering inom Azure cloud services, skalning och deployment av applikationer i molnmiljö." data-en="Specialization in Azure cloud services, scaling and deployment of applications in cloud environment.">
-                            Specialisering inom Azure cloud services, skalning och deployment av applikationer i molnmiljö.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">Hemfixarna</h3>
-                        <div class="timeline-meta">
-                            <span class="timeline-date">Mars 2024 - Pågående/Konsult</span>
-                            <span class="timeline-location" data-sv="Teknisk Support" data-en="Technical Support">Teknisk Support</span>
-                        </div>
-                        <p class="timeline-description" data-sv="Teknisk support och problemlösning som utvecklade mina kommunikativa färdigheter och förståelse för användarupplevelse." data-en="Technical support and problem solving that developed my communication skills and understanding of user experience.">
-                            Teknisk support och problemlösning som utvecklade mina kommunikativa färdigheter och förståelse för användarupplevelse.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title" data-sv="Fullstack Webbutvecklare" data-en="Fullstack Web Developer">Fullstack Webbutvecklare</h3>
-                        <div class="timeline-meta">
-                            <span class="timeline-date">2022-2024</span>
-                            <span class="timeline-location">Chas Academy</span>
-                        </div>
-                        <p class="timeline-description" data-sv="Omfattande utbildning inom fullstack-utveckling med fokus på moderna teknologier som .NET, React och databaser." data-en="Comprehensive education in fullstack development focusing on modern technologies like .NET, React and databases.">
-                            Omfattande utbildning inom fullstack-utveckling med fokus på moderna teknologier som .NET, React och databaser.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">Cykelcell AB</h3>
-                        <div class="timeline-meta">
-                            <span class="timeline-date">2024-Juli 2025</span>
-                            <span class="timeline-location" data-sv="Junior Utvecklare" data-en="Junior Developer">Egenföretagare, E-handelsutvecklare (Shopify),Cykelcell AB</span>
-                        </div>
-                        <p class="timeline-description" data-sv="Startade och drev eget företag inom e-handel, med fokus på cykelprodukter.
-Ansvarade för systemadministration, orderflöde, produktinformation och kundservice." data-en="Started and ran my own e-commerce business, specializing in bicycle products.
-Responsible for system administration, order flow, product information, and customer service.">
-                            Startade och drev eget företag inom e-handel, med fokus på cykelprodukter.
-Ansvarade för systemadministration, orderflöde, produktinformation och kundservice.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title" data-sv="Teknikprogrammet" data-en="Technology Program">Teknikprogrammet</h3>
-                        <div class="timeline-meta">
-                            <span class="timeline-date">2019-2022</span>
-                            <span class="timeline-location" data-sv="Gymnasiet" data-en="High School">Gymnasiet</span>
-                        </div>
-                        <p class="timeline-description" data-sv="Grundläggande teknisk utbildning som lade grunden för min passion för teknik och programmering." data-en="Basic technical education that laid the foundation for my passion for technology and programming.">
-                            Grundläggande teknisk utbildning som lade grunden för min passion för teknik och programmering.
-                        </p>
-                    </div>
-                </div>
+      <div class="container">
+        <h2
+          class="section-title"
+          data-sv="Erfarenhet & Utbildning"
+          data-en="Experience & Education"
+        >
+          Erfarenhet & Utbildning
+        </h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3
+                class="timeline-title"
+                data-sv="Prompt Engineering & Generativ AI"
+                data-en="Prompt Engineering & Generative AI"
+              >
+                Prompt Engineering & Generativ AI
+              </h3>
+              <div class="timeline-meta">
+                <span class="timeline-date" data-sv="Pågående" data-en="Ongoing"
+                  >Pågående</span
+                >
+                <span class="timeline-location">Nackademin</span>
+              </div>
+              <p
+                class="timeline-description"
+                data-sv="Fördjupning inom AI-teknik och prompt engineering för att utveckla kompetenser inom generativ AI och maskininlärning."
+                data-en="Specialization in AI technology and prompt engineering to develop skills in generative AI and machine learning."
+              >
+                Fördjupning inom AI-teknik och prompt engineering för att
+                utveckla kompetenser inom generativ AI och maskininlärning.
+              </p>
             </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">Devup Solutions</h3>
+              <div class="timeline-meta">
+                <span class="timeline-date">2023-2024</span>
+                <span
+                  class="timeline-location"
+                  data-sv="Utvecklare"
+                  data-en="Developer"
+                  >Utvecklare (Praktik)</span
+                >
+              </div>
+              <p
+                class="timeline-description"
+                data-sv="Fullstack-utveckling med fokus på .NET och moderna webblösningar. Arbetade med agila metoder och CI/CD-processer."
+                data-en="Fullstack development focused on .NET and modern web solutions. Worked with agile methods and CI/CD processes."
+              >
+                Fullstack-utveckling med fokus på .NET och moderna
+                webblösningar. Arbetade med agila metoder och CI/CD-processer.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3
+                class="timeline-title"
+                data-sv="Azure Cloud Utveckling"
+                data-en="Azure Cloud Development"
+              >
+                Azure Cloud Utveckling
+              </h3>
+              <div class="timeline-meta">
+                <span class="timeline-date">Oct 2024- Dec2024</span>
+                <span class="timeline-location">IT-Högskolan</span>
+              </div>
+              <p
+                class="timeline-description"
+                data-sv="Specialisering inom Azure cloud services, skalning och deployment av applikationer i molnmiljö."
+                data-en="Specialization in Azure cloud services, scaling and deployment of applications in cloud environment."
+              >
+                Specialisering inom Azure cloud services, skalning och
+                deployment av applikationer i molnmiljö.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">Hemfixarna</h3>
+              <div class="timeline-meta">
+                <span class="timeline-date">Mars 2024 - Pågående/Konsult</span>
+                <span
+                  class="timeline-location"
+                  data-sv="Teknisk Support"
+                  data-en="Technical Support"
+                  >Teknisk Support</span
+                >
+              </div>
+              <p
+                class="timeline-description"
+                data-sv="Teknisk support och problemlösning som utvecklade mina kommunikativa färdigheter och förståelse för användarupplevelse."
+                data-en="Technical support and problem solving that developed my communication skills and understanding of user experience."
+              >
+                Teknisk support och problemlösning som utvecklade mina
+                kommunikativa färdigheter och förståelse för användarupplevelse.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3
+                class="timeline-title"
+                data-sv="Fullstack Webbutvecklare"
+                data-en="Fullstack Web Developer"
+              >
+                Fullstack Webbutvecklare
+              </h3>
+              <div class="timeline-meta">
+                <span class="timeline-date">2022-2024</span>
+                <span class="timeline-location">Chas Academy</span>
+              </div>
+              <p
+                class="timeline-description"
+                data-sv="Omfattande utbildning inom fullstack-utveckling med fokus på moderna teknologier som .NET, React och databaser."
+                data-en="Comprehensive education in fullstack development focusing on modern technologies like .NET, React and databases."
+              >
+                Omfattande utbildning inom fullstack-utveckling med fokus på
+                moderna teknologier som .NET, React och databaser.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">Cykelcell AB</h3>
+              <div class="timeline-meta">
+                <span class="timeline-date">2024-Juli 2025</span>
+                <span
+                  class="timeline-location"
+                  data-sv="Junior Utvecklare"
+                  data-en="Junior Developer"
+                  >Egenföretagare, E-handelsutvecklare (Shopify),Cykelcell
+                  AB</span
+                >
+              </div>
+              <p
+                class="timeline-description"
+                data-sv="Startade och drev eget företag inom e-handel, med fokus på cykelprodukter.
+Ansvarade för systemadministration, orderflöde, produktinformation och kundservice."
+                data-en="Started and ran my own e-commerce business, specializing in bicycle products.
+Responsible for system administration, order flow, product information, and customer service."
+              >
+                Startade och drev eget företag inom e-handel, med fokus på
+                cykelprodukter. Ansvarade för systemadministration, orderflöde,
+                produktinformation och kundservice.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3
+                class="timeline-title"
+                data-sv="Teknikprogrammet"
+                data-en="Technology Program"
+              >
+                Teknikprogrammet
+              </h3>
+              <div class="timeline-meta">
+                <span class="timeline-date">2019-2022</span>
+                <span
+                  class="timeline-location"
+                  data-sv="Gymnasiet"
+                  data-en="High School"
+                  >Gymnasiet</span
+                >
+              </div>
+              <p
+                class="timeline-description"
+                data-sv="Grundläggande teknisk utbildning som lade grunden för min passion för teknik och programmering."
+                data-en="Basic technical education that laid the foundation for my passion for technology and programming."
+              >
+                Grundläggande teknisk utbildning som lade grunden för min
+                passion för teknik och programmering.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section id="kontakt" class="contact">
-        <div class="container">
-            <h2 class="section-title" data-sv="Kontakta Mig" data-en="Contact Me">Kontakta Mig</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3 data-sv="Låt oss prata!" data-en="Let's talk!">Låt oss prata!</h3>
-                    <p data-sv="Jag är alltid öppen för nya möjligheter och intressanta projekt. Tveka inte att höra av dig!" data-en="I'm always open to new opportunities and interesting projects. Don't hesitate to reach out!">
-                        Jag är alltid öppen för nya möjligheter och intressanta projekt. Tveka inte att höra av dig!
-                    </p>
-                    
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <a href="mailto:Rezaeskandari.ammori@yahoo.com">Rezaeskandari.ammori@yahoo.com</a>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <a href="tel:0761933282">076-193 32 82</a>
-                    </div>
-                    
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/reza-eskandari-5a4715202/" target="_blank" class="social-link">
-                            <i class="fab fa-linkedin"></i>
-                            <span>LinkedIn</span>
-                        </a>
-                        <a href="https://github.com/Rezaeskandar" target="_blank" class="social-link">
-                            <i class="fab fa-github"></i>
-                            <span>GitHub</span>
-                        </a>
-                    </div>
-                </div>
-                
-                <form class="contact-form" id="contact-form">
-                    <div class="form-group">
-                        <label for="name" data-sv="Namn" data-en="Name">Namn</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="email" data-sv="E-post" data-en="Email">E-post</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="message" data-sv="Meddelande" data-en="Message">Meddelande</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    
-                    <button type="submit" class="btn btn-primary" data-sv="Skicka Meddelande" data-en="Send Message">Skicka Meddelande</button>
-                </form>
+      <div class="container">
+        <h2 class="section-title" data-sv="Kontakta Mig" data-en="Contact Me">
+          Kontakta Mig
+        </h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3 data-sv="Låt oss prata!" data-en="Let's talk!">
+              Låt oss prata!
+            </h3>
+            <p
+              data-sv="Jag är alltid öppen för nya möjligheter och intressanta projekt. Tveka inte att höra av dig!"
+              data-en="I'm always open to new opportunities and interesting projects. Don't hesitate to reach out!"
+            >
+              Jag är alltid öppen för nya möjligheter och intressanta projekt.
+              Tveka inte att höra av dig!
+            </p>
+
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:Rezaeskandari.ammori@yahoo.com"
+                >Rezaeskandari.ammori@yahoo.com</a
+              >
             </div>
+
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <a href="tel:0761933282">076-193 32 82</a>
+            </div>
+
+            <div class="social-links">
+              <a
+                href="https://www.linkedin.com/in/reza-eskandari-5a4715202/"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+              </a>
+              <a
+                href="https://github.com/Rezaeskandar"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <label for="name" data-sv="Namn" data-en="Name">Namn</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email" data-sv="E-post" data-en="Email">E-post</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message" data-sv="Meddelande" data-en="Message"
+                >Meddelande</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="btn btn-primary"
+              data-sv="Skicka Meddelande"
+              data-en="Send Message"
+            >
+              Skicka Meddelande
+            </button>
+          </form>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Reza Eskandari. <span data-sv="Alla rättigheter förbehållna." data-en="All rights reserved.">Alla rättigheter förbehållna.</span></p>
-        </div>
+      <div class="container">
+        <p>
+          &copy; 2025 Reza Eskandari.
+          <span
+            data-sv="Alla rättigheter förbehållna."
+            data-en="All rights reserved."
+            >Alla rättigheter förbehållna.</span
+          >
+        </p>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

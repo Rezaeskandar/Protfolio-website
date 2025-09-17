@@ -18,11 +18,12 @@ const content = {
         "Självgående utvecklare med erfarenhet inom .NET, C#, React/TypeScript, Azure och databaser. Studerar för närvarande Prompt Engineering & Generativ AI på Nackademin.": "Självgående utvecklare med erfarenhet inom .NET, C#, React/TypeScript, Azure, databaser och DevOps/CI/CD. Studerar för närvarande Prompt Engineering & Generativ AI på Nackademin.",
         "Se mina projekt": "Se mina projekt",
         "Kontakta mig": "Kontakta mig",
+        "Ladda ner CV": "Ladda ner CV",
         
         // Projects section
         "Mina Projekt": "Mina Projekt",
-        "Dynamic CV Website": "Dynamic CV Website",
-        "En dynamisk CV-webbplats byggd med vanilla JavaScript, HTML och CSS med responsiv design och interaktiva element.": "En dynamisk CV-webbplats byggd med vanilla JavaScript, HTML och CSS med responsiv design och interaktiva element.",
+        "Portfolio Website": "Portfolio Website",
+        "En Portfolio Website byggd med vanilla JavaScript, HTML och CSS med responsiv design och interaktiva element.": "En Portfolio Website byggd med vanilla JavaScript, HTML och CSS med responsiv design och interaktiva element.",
         "Fullstack E-handel": "Fullstack E-handel",
         "En komplett e-handelsplattform med C#/.NET backend, React/TypeScript frontend och JWT-autentisering. Examensprojekt som visar fullstack-kompetenser.": "En komplett e-handelsplattform med C#/.NET backend, React/TypeScript frontend och JWT-autentisering. Examensprojekt som visar fullstack-kompetenser.",
         "Shuffle Card Game": "Shuffle Card Game",
@@ -89,11 +90,12 @@ const content = {
         "Självgående utvecklare med erfarenhet inom .NET, C#, React/TypeScript, Azure och databaser. Studerar för närvarande Prompt Engineering & Generativ AI på Nackademin.": "Self-driven developer with experience in .NET, C#, React/TypeScript, Azure, databases, and DevOps/CI/CD. Currently studying Prompt Engineering & Generative AI at Nackademin.",
         "Se mina projekt": "View my projects",
         "Kontakta mig": "Contact me",
+        "Ladda ner CV": "Download CV",
         
         // Projects section
         "Mina Projekt": "My Projects",
-        "Dynamic CV Website": "Dynamic CV Website",
-        "En dynamisk CV-webbplats byggd med vanilla JavaScript, HTML och CSS med responsiv design och interaktiva element.": "A dynamic CV website built with vanilla JavaScript, HTML, and CSS featuring responsive design and interactive elements.",
+        "Portfolio Website": "Portfolio Website",
+        "En Portfolio Website byggd med vanilla JavaScript, HTML och CSS med responsiv design och interaktiva element.": "A Portfolio Website built with vanilla JavaScript, HTML, and CSS featuring responsive design and interactive elements.",
         "Fullstack E-handel": "Fullstack E-commerce",
         "En komplett e-handelsplattform med C#/.NET backend, React/TypeScript frontend och JWT-autentisering. Examensprojekt som visar fullstack-kompetenser.": "A complete e-commerce platform with C#/.NET backend, React/TypeScript frontend, and JWT authentication. Graduation project showcasing fullstack capabilities.",
         "Shuffle Card Game": "Shuffle Card Game",
